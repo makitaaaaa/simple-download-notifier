@@ -1,0 +1,7 @@
+{
+  "name": "testtab",
+  "version": "1",
+  "devDependencies": {
+    "eslint": "^4.12.1"
+  }
+}

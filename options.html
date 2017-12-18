@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Simple download notifier Options</title>
+  <script src="options.js"></script>
+  <link href="options.css" rel="stylesheet">
+</head>
+
+<body>
+  <form name="mainForm" id="mainForm" style="visibility: hidden;">
+    <fieldset>
+      <legend>Settings</legend>
+      <fieldset>
+        <legend>Display time(ms)</legend>
+        <div class="divTable">
+          <div class="divTableBody">
+            <div class="divTableRow">
+              <div class="divTableCell">
+                <label>download start</label>
+              </div>
+              <div class="divTableCell">
+                <input type="number" name="start" id="start" size="6" step="1" min="3000" max="30000">
+              </div>
+            </div>
+            <div class="divTableRow">
+              <div class="divTableCell">
+                <label>download complete</label>
+              </div>
+              <div class="divTableCell">
+                <input type="number" name="complete" id="complete" size="6" step="1" min="3000" max="30000">
+              </div>
+            </div>
+            <div class="divTableRow">
+              <div class="divTableCell">
+                <label>download cancel</label>
+              </div>
+              <div class="divTableCell">
+                <input type="number" name="cancel" id="cancel" size="6" step="1" min="3000" max="30000">
+              </div>
+            </div>
+            <div class="divTableRow">
+              <div class="divTableCell">
+                <label>download error</label>
+              </div>
+              <div class="divTableCell">
+                <input type="number" name="error" id="error" size="6" step="1" min="3000" max="30000">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          * Blank : Disable notification
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Icons style</legend>
+        <div>
+          <input type="radio" id="iconDefault" name="iconStyle" value="default">
+          <label for="iconDefault" class="radio middle" style="margin-right: 20px;">
+            <img src="/icons/default/style-thumb.png">
+          </label>
+          <input type="radio" id="iconSimple" name="iconStyle" value="simple">
+          <label for="iconSimple" class="radio middle">
+            <img src="/icons/simple/style-thumb.png">
+          </label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Click action</legend>
+        <div>
+          <input type="radio" id="actionClose" name="clickAction" value="1">
+          <label for="actionClose" class="radio">Close notification</label>
+          <input type="radio" id="actionShow" name="clickAction" value="2">
+          <label for="actionShow" class="radio">Show download folder</label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Misc options</legend>
+        <div>
+          <input type="checkbox" id="checkDisableWatching" name="checkDisableWatching">
+          <label for="checkDisableWatching" class="checkbox">Disable notification while watching videos, streaming or listening music etc.</label>
+        </div>
+      </fieldset>
+      <hr>
+      <div>
+        <button type="button" class="fixed" name="save" id="save">Save</button>
+        <label id="info"></label>
+      </div>
+    </fieldset>
+  </form>
+</body>
+
+</html>

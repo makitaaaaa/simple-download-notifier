@@ -1,0 +1,31 @@
+{
+  "manifest_version": 2,
+  "name": "Simple download notifier",
+  "version": "0.2.0",
+  "description": "Notification of download status change.",
+  "author": "makitaaaaa",
+  "applications": {
+    "gecko": {
+      "id": "sdn@makitaaaaa"
+    }
+  },
+  "icons": {
+    "48": "icons/icon-48.png",
+    "96": "icons/icon-96.png"
+  },
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "options_ui": {
+    "page": "options.html",
+    "browser_style": false,
+    "open_in_tab": false
+  },
+  "permissions": [
+    "downloads",
+    "notifications",
+    "storage"
+  ]
+}
