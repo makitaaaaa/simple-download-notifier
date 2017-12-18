@@ -1,5 +1,6 @@
 # Simple download notifier
 
-Simple download notifier is Webextensions Add-on for Mozilla Firefox
+Simple download notifier is WebExtensions Add-on for Mozilla Firefox
 
-Notification of download status change.
+Features:
+ - Notification of download status change.
