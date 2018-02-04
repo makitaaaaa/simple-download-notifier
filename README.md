@@ -8,7 +8,7 @@ Features:
  - Notification of download status change.
  
  Downloads:
- - https://addons.mozilla.org/ja/firefox/addon/simple-download-notifier/
+ - https://addons.mozilla.org/en-US/firefox/addon/simple-download-notifier/
 
 ---
 /icons/default/ Icons author site : http://recepkutuk.com/
