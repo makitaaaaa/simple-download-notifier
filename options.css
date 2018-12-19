@@ -158,6 +158,10 @@ input[type="password"]:invalid {
   background: #ffdddd;
 }
 
+input[type="number"]{
+  text-align: right;
+}
+
 button[type="button"] {
   display: inline-block;
   text-decoration: none;
@@ -209,25 +213,21 @@ fieldset {
     margin-left: 30px;
     width: 100%;
     opacity: 0.0;
-    filter: blur(10px);
   }
   10% {
     margin-left: 5px;
     width: 100%;
     opacity: 1;
-    filter: none;
   }
   90% {
     margin-left: 5px;
     width: 100%;
     opacity: 1;
-    filter: none;
   }
   100% {
     margin-left: 30px;
     width: 100%;
     opacity: 0.0;
-    filter: blur(10px);
   }
 }
 
@@ -239,7 +239,7 @@ fieldset {
 
 .divTable {
   border: 1px solid #cbc9c9;
-  width: 60%;
+  width: 90%;
   text-align: left;
   border-collapse: collapse;
   display: table;
@@ -263,3 +263,10 @@ hr {
   border-top: 1px solid #cbc9c9;
 }
 
+.inputField {
+  width: 7em;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
