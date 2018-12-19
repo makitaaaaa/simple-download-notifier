@@ -87,7 +87,7 @@ function handleError(error) {
 
 /**
  * ダウンロード項目が作成された時のハンドル処理をする
- * @param {DownloadItem} item ダウンロード項目
+ * @param {browser.downloads.DownloadItem} item ダウンロード項目
  */
 function handleDownloadCreated(item) {
   // 手動でdeltaを作成する
@@ -166,7 +166,7 @@ function onDonwloadItemUpdated(delta) {
 /**
  * 通知処理をする
  * @param {object} delta 状態変化差分
- * @param {DownloadItem} downloadItem ダウンロード項目
+ * @param {browser.downloads.DownloadItem} downloadItem ダウンロード項目
  */
 function notifyDownloadItem(delta, downloadItem) {
   let currentState = null;
@@ -263,9 +263,9 @@ function notifyDownloadItem(delta, downloadItem) {
 /**
  * 通知を表示する
  * @param {number} notificationId 通知ID
- * @param {object} notifyOption 通知オプション
- * @param {DownloadItem} item ダウンロード項目
- * @param {number} displayTime 表示時間
+ * @param {browser.notifications.CreateNotificationOptions} notifyOption 通知オプション
+ * @param {browser.downloads.DownloadItem} item ダウンロード項目
+ * @param {number} displayTime 表示時間(ms)
  */
 function showNotifications(notificationId, notifyOption, item, displayTime) {
   notificationDonwloadIdMap[notificationId] = item.id;
@@ -380,7 +380,7 @@ function saveSettings() {
 
 /**
  * メッセージを処理する
- * @param {Object} request リクエストメッセージ
+ * @param {object} request リクエストメッセージ
  * @param {MessageSender} sender 送信者
  * @param {function} sendResponse 送信者へのコールバック関数
  */
