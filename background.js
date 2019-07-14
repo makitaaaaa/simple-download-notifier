@@ -228,7 +228,7 @@ function notifyDownloadItem(delta, downloadItem) {
     iconUrl = `icons/${iconStyle}/down-comp.svg`;
     displayTime = commonSettings.completeDisplayTime;
   }
-  if (displayTime === null) {
+  if (displayTime == null || isNaN(displayTime)) {
     return;
   }
   if (iconUrl === null) {
@@ -454,14 +454,4 @@ function getGuid() {
   return `${s4() + s4()}-${s4()}-${s4()}-${s4()}-${s4()}${s4()}${s4()}`;
 }
 
-/**
- * Sleepする
- * @param {number} ms MS
- */
-function sleep(ms) {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      resolve();
-    }, ms);
-  });
-}
+
