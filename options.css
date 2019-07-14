@@ -1,6 +1,7 @@
 :root {
+  font: message-box;
   box-sizing: border-box;
-  --base-font-size: 16px;
+  --base-font-size: 15px;
 
   --radio-button-size: 19px;
   --checkbox-button-size: 17px;
@@ -17,7 +18,6 @@ input,
 textarea,
 button,
 select {
-  font-family: sans-serif;
   font-size: var(--base-font-size);
   color: #4c4c4c;
   padding: 2px 2px 2px 2px;
